@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Webpack Starter Kit</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet">
+    <title>Travel Tracker</title>
   </head>
   <body>
-    <h1>Webpack Starter Kit</h1>
+    <header class="header">
+      <h1>Travel Tracker</h1>
+      <section class="welcome-message"></section>
+      <section class="money-display"></section>
+      <section class="current-trip"></section>
+    </header>
+    <main class="main-section">
+      <section class="left-section">
+        <form class="book-trip" id="book-trip-form" role="search">
+          <h3>Book a Trip!</h3>
+          <label for="">Departure Date</label>
+          <input id="trip-date" type="date"></input>
+          <label for="trip-duration">Number of Days</label>
+          <input id="num-days-input" type="number">
+          <label for="num-travelers">Number of Travelers</label>
+          <input id="num-travelers-input" type="number">
+          <label for="destination">Destination</label>
+          <select class="dest-dropdown-menu"></select>
+          <button class="trip-est-btn" disabled = disabled type="button" name="button" aria-label="Get trip estimate" aria controls="search-input">Get Estimate</button>
+          <button class="book-trip-btn" disabled = disabled type="button" name="button" aria-label="Submit trip request" aria-controls="search-input">Submit</button>
+        </form>
+      </section>
+    </main>
 
     <img src="./images/turing-logo.png" alt="turing logo" height="100px" width="100px">
 
