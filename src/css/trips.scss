@@ -1,0 +1,26 @@
+img {
+  height: 8em;
+  width: 14em;
+  border-radius: .5em;
+}
+
+.past-trips {
+  @include user-trips-layout();
+}
+
+.present-trips {
+  @include user-trips-layout();
+}
+
+.upcoming-trips {
+  @include user-trips-layout();
+}
+
+.upcoming-trip-cards {
+  width: 14em;
+}
+
+.pending-trips {
+  @include user-trips-layout();
+  margin: 0em 1em 0em 1em;
+}
